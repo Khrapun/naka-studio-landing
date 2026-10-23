@@ -1,0 +1,10 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  output: "export",
+  basePath: process.env.PAGES_BASE_PATH || undefined,
+  images: { unoptimized: true },
+};
+
+export default nextConfig;
